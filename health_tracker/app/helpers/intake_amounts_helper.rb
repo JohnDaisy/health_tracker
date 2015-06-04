@@ -1,0 +1,2 @@
+module IntakeAmountsHelper
+end

@@ -3,6 +3,10 @@ class WeightsController < ApplicationController
 
   # GET /weights
   # GET /weights.json
+  def dashboard
+    @weight = Weight.last.weight
+  end
+
   def index
     @weights = Weight.all
   end
