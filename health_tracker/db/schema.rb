@@ -12,15 +12,14 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20150604184542) do
+
   create_table "intake_amounts", force: :cascade do |t|
     t.decimal  "intake_amount"
     t.datetime "date"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
-end
 
-ActiveRecord::Schema.define(version: 20150604174321) do
   create_table "steps", force: :cascade do |t|
     t.decimal  "step_number"
     t.datetime "date"
@@ -28,9 +27,6 @@ ActiveRecord::Schema.define(version: 20150604174321) do
     t.datetime "updated_at",  null: false
   end
 
-end
-
-ActiveRecord::Schema.define(version: 20150604174100) do
   create_table "weights", force: :cascade do |t|
     t.decimal  "weight"
     t.datetime "date"
