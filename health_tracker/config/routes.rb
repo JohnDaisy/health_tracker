@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
   resources :intake_amounts
+
+  resources :steps
+
   resources :weights
   root 'weights#dashboard'
   # The priority is based upon order of creation: first created -> highest priority.
