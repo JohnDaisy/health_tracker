@@ -21,3 +21,14 @@ ActiveRecord::Schema.define(version: 20150604174321) do
   end
 
 end
+
+ActiveRecord::Schema.define(version: 20150604174100) do
+
+  create_table "weights", force: :cascade do |t|
+    t.decimal  "weight"
+    t.datetime "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+end
