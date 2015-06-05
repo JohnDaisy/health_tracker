@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :performed_exercises
   resources :intake_amounts
 
   resources :steps
