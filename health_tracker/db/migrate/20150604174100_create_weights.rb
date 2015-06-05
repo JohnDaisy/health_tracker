@@ -2,7 +2,7 @@ class CreateWeights < ActiveRecord::Migration
   def change
     create_table :weights do |t|
       t.decimal :weight
-      t.datetime :date
+      t.date :date
 
       t.timestamps null: false
     end
