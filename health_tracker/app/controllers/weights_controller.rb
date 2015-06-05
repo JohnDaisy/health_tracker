@@ -5,6 +5,7 @@ class WeightsController < ApplicationController
   # GET /weights.json
   def dashboard
     @weight = Weight.last.weight
+    @miles = Step.all
   end
 
   def index

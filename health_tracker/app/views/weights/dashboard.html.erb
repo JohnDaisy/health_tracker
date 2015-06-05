@@ -1,6 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Your weight today is: <%= @weight %> lbs.</h1>
+
+<p> You have walked <%= @miles.number_of_miles %> miles today </p>
 
 <%= link_to 'Steps', steps_path %>
 <%= link_to 'Caloric Intake', intake_amounts_path %>
