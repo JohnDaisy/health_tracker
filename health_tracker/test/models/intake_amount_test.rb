@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class IntakeAmountTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "intake_amount total" do
+    assert_equal 1400, IntakeAmount.daily_intake
+  end
 end
