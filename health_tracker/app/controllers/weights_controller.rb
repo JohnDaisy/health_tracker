@@ -9,7 +9,7 @@ class WeightsController < ApplicationController
   end
 
   def index
-    @weights = Weight.all
+    @weights = Weight.all.order(:date)
   end
 
   # GET /weights/1
