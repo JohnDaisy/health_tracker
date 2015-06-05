@@ -5,6 +5,7 @@ class IntakeAmountsController < ApplicationController
   # GET /intake_amounts.json
   def index
     @intake_amounts = IntakeAmount.all
+    @daily_intake = IntakeAmount.daily_intake
   end
 
   # GET /intake_amounts/1
