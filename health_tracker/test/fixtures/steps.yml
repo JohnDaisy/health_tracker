@@ -2,12 +2,12 @@
 
 one:
   step_number: 100
-  date: <%= DateTime.now.to_s(:db) %>
+  date: <%= (DateTime.now - 1.day).to_s(:db) %>
 
 two:
   step_number: 200
-  date: <%= DateTime.now.to_s(:db) %>
+  date: <%= (DateTime.now - 1.day).to_s(:db) %>
 
 long:
-  step_number: 3924
+  step_number: 4224
   date: <%= DateTime.now.to_s(:db) %>

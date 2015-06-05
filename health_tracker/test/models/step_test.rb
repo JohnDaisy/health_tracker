@@ -2,7 +2,7 @@ require 'test_helper'
 
 class StepTest < ActiveSupport::TestCase
   test "get total" do
-    assert_equal 4224, Step.total
+    assert_equal 4224, Step.daily_total
   end
 
   test "miles stepped" do
