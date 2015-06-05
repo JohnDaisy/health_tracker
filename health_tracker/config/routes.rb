@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   resources :steps
 
   resources :weights
+
   root 'weights#dashboard'
+  get 'exercise_types' => 'exercise_types#index'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
