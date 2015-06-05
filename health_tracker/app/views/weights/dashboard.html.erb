@@ -1,9 +1,9 @@
-<h1>Your weight today is: <%= @weight %> lbs.</h1>
+<h1>Your weight today is: <%= @weights.last.weight %> lbs.</h1>
 
 <p> You have walked <%= @miles.number_of_miles %> miles today </p>
 
 <%= link_to 'Steps', steps_path %> |
 <%= link_to 'Caloric Intake', intake_amounts_path %> |
 <%= link_to 'Weight', weights_path %> |
-<%= link_to 'Exercises Performed', performed_exercises_path %> |
+<%= link_to 'Exercises', performed_exercises_path %> |
 <%= link_to 'Dashboard', root_path %>

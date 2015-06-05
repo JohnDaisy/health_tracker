@@ -17,7 +17,7 @@
 
 <p>
   <strong>Exercise type:</strong>
-  <%= @performed_exercise.exercise_type_id %>
+  <%= @performed_exercise.get_type %>
 </p>
 
 <%= link_to 'Edit', edit_performed_exercise_path(@performed_exercise) %> |
