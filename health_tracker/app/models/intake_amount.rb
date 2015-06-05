@@ -1,6 +1,6 @@
 class IntakeAmount < ActiveRecord::Base
 
-  def total_intake_today
+  def self.daily_intake
     today = self.all.select{|s| s.date.day == DateTime.now.day}
     today.reduce(0){|sum, t| sum + t.intake_amount}
   end

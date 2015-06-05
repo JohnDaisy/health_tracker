@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  intake_amount: 9.99
+  intake_amount: 500
   date: 2015-06-04 14:45:42
 
 two:
-  intake_amount: 9.99
+  intake_amount: 50
+  date: 2015-06-04 14:45:42
+
+three:
+  intake_amount: 850
   date: 2015-06-04 14:45:42
