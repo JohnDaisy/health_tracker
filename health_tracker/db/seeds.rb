@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+ExerciseType.create!(name: "Cardio")
+ExerciseType.create!(name: "Aerobic")
+ExerciseType.create!(name: "Anaerobic")
+ExerciseType.create!(name: "Calisthenics")
+ExerciseType.create!(name: "Flexibility")

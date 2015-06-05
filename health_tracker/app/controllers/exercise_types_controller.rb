@@ -4,7 +4,7 @@ class ExerciseTypesController < ApplicationController
   # GET /intake_amounts
   # GET /intake_amounts.json
   def index
-    
+    @types = ExerciseType.all
   end
 
   private
