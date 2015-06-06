@@ -1,10 +1,13 @@
 <% if @current_weight %>
-  <h1>Your weight today is: <%= @current_weight.weight %> lbs.</h1>
+  <p>Your weight today is: <%= @current_weight.weight %> lbs.</p>
+  <p>If you walked a mile today you could burn
+    <%= number_with_precision((@current_weight.weight)*0.57, precision: 0) %> calories.
+  </p>
 <% else %>
-  <h1> Please enter your weight </h1>
+  <h3> PLEASE ENTER YOUR WEIGHT </h3>
 <% end %>
 
-<p> You have walked <%= @miles.number_of_miles %> miles today </p>
+<p>So far today you have walked <%= @miles.number_of_miles %> miles today.</p>
 
 <%= link_to 'Steps', steps_path %> |
 <%= link_to 'Caloric Intake', intake_amounts_path %> |
