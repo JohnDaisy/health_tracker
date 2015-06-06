@@ -3,6 +3,7 @@
 <h1>Listing Intake Amounts</h1>
 
 <p>You have consumed <%=@daily_intake %> calories today.</p>
+<!-- <p>Your net caloric intake is <%=@net_calories %>.</p> -->
 <table>
   <thead>
     <tr>
@@ -27,5 +28,5 @@
 
 <br>
 
-<%= link_to 'New Intake amount', new_intake_amount_path %> | 
+<%= link_to 'New Intake Amount', new_intake_amount_path %> |
 <%= link_to 'Dashboard', root_path %>

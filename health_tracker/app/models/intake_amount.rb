@@ -5,9 +5,8 @@ class IntakeAmount < ActiveRecord::Base
     today.reduce(0){|sum, s| sum + s.intake_amount}
   end
 
-
-  # def net_calories
-  #   (self.all.reduce(0){|sum, t| sum + i.intake_amount}) - calories_burned
-  # end
+  def self.net_calories
+    (self.daily_intake - PerformedExercise.daily_burn_amount).to_f
+  end
 
 end

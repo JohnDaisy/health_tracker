@@ -4,12 +4,12 @@ class WeightsController < ApplicationController
   # GET /weights
   # GET /weights.json
   def dashboard
-    @weights = Weight.all
+    @current_weight = Weight.order(:date).last
     @miles = Step.all
   end
 
   def index
-    @weights = Weight.all
+    @weights = Weight.all.order(:date)
   end
 
   # GET /weights/1

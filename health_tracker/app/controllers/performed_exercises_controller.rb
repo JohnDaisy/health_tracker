@@ -4,7 +4,7 @@ class PerformedExercisesController < ApplicationController
   # GET /performed_exercises
   # GET /performed_exercises.json
   def index
-    @performed_exercises = PerformedExercise.all
+    @performed_exercises = PerformedExercise.all.order(:date)
   end
 
   # GET /performed_exercises/1

@@ -4,8 +4,9 @@ class IntakeAmountsController < ApplicationController
   # GET /intake_amounts
   # GET /intake_amounts.json
   def index
-    @intake_amounts = IntakeAmount.all
+    @intake_amounts = IntakeAmount.all.order(:date)
     @daily_intake = IntakeAmount.daily_intake
+    #@daily_net_calories = IntakeAmount.net_calories
   end
 
   # GET /intake_amounts/1

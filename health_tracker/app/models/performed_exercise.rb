@@ -6,4 +6,9 @@ class PerformedExercise < ActiveRecord::Base
     type.name
   end
 
+  def self.daily_burn_amount
+    today = self.all.select{|p| p.date.day == DateTime.now.day}
+    today.reduce(0){|sum, p| sum + p.burn_amount}
+  end
+
 end
