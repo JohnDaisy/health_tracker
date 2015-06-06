@@ -1,13 +1,31 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  performed_exercise: MyString
-  burn_amount: 9.99
-  date: 2015-06-05 11:39:10
+  performed_exercise: Running
+  burn_amount: 200.00
+  date: 2015-06-06 11:39:10
   exercise_type_id: 1
 
 two:
-  performed_exercise: MyString
-  burn_amount: 9.99
-  date: 2015-06-05 11:39:10
+  performed_exercise: Pilates
+  burn_amount: 20.00
+  date: 2015-06-06 11:39:10
+  exercise_type_id: 1
+
+three:
+  performed_exercise: Soccer
+  burn_amount: 80.00
+  date:  <%= (DateTime.now - 1.day).to_s(:db) %>
+  exercise_type_id: 1
+
+four:
+  performed_exercise: Tennis
+  burn_amount: 100.00
+  date:  <%= (DateTime.now - 1.day).to_s(:db) %>
+  exercise_type_id: 1
+
+five:
+  performed_exercise: Jogging
+  burn_amount: 100.00
+  date:  <%= (DateTime.now - 1.day).to_s(:db) %>
   exercise_type_id: 1
