@@ -23,3 +23,12 @@ five:
 six:
   intake_amount: 100
   date: 2015-06-06 13:45:42
+
+
+seven:
+  intake_amount: 50
+  date: <%= DateTime.now.to_s(:db) %>
+
+eight:
+  intake_amount: 850
+  date: <%= DateTime.now.to_s(:db) %>

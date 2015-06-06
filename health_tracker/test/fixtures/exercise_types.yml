@@ -1,9 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   name: Running
   id: 1
 
 two:
   name: Yoga
+=======
+  name: Aerobic
+  id: 1
+
+two:
+  name: Calisthenics
+>>>>>>> 4a493f5becf0ce30b9d7811dce305f2d0f995f6f
   id: 2
