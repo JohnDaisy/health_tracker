@@ -1,0 +1,7 @@
+== Health Tracker
+
+This is an application which allows the user to enter and review information about his/her health
+and exercise habits.  This app will track the user's weight, the number of steps taken per day, calories
+consumed and exercises performed.  The application's dashboard page will display the net caloric intake (that is,
+the calories consumed minus calories burned through exercise.)  The dashboard will also show the number of miles the user
+has walked that day and, depending on their weight, how many calories per mile they have burned.

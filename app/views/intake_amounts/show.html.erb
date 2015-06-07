@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Intake amount:</strong>
+  <%= @intake_amount.intake_amount %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @intake_amount.date.strftime("%b %e, %Y - %l:%M%p ") %>
+</p>
+
+<%= link_to 'Edit', edit_intake_amount_path(@intake_amount) %> |
+<%= link_to 'Back', intake_amounts_path %> |
+<%= link_to 'Dashboard', root_path %>

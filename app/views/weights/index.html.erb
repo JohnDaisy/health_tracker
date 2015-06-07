@@ -1,0 +1,34 @@
+
+
+<p id="notice"><%= notice %></p>
+<div class="centered">
+  <h1>Listing Weights</h1>
+  <table class="table table-bordered">
+  </table>
+      <table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Weight</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @weights.each do |weight| %>
+      <tr>
+        <td><%= weight.weight %></td>
+        <td><%= weight.date.strftime("%b %e, %Y ") %></td>
+        <td><%= link_to 'Show', weight %></td>
+        <td><%= link_to 'Edit', edit_weight_path(weight) %></td>
+        <td><%= link_to 'Destroy', weight,method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- <td><%= link_to 'Edit', edit_weight_path(weight), class: 'btn btn-primary btn-xs'  %></td>
+        <td><%= link_to 'Destroy', weight, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs'  %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+
+<%= link_to 'New Weight', new_weight_path %> |
+<%= link_to 'Dashboard', root_path %>

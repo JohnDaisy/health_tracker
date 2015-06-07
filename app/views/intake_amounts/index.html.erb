@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Intake Amounts</h1>
+
+<p>You have consumed <%=@daily_intake %> calories today.</p>
+<div class="container">
+  <table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Intake amount</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @intake_amounts.each do |intake_amount| %>
+      <tr>
+        <td><%= intake_amount.intake_amount %></td>
+        <td><%= intake_amount.date.strftime("%b %e, %Y - %l:%M%p ") %></td>
+        <td><%= link_to 'Show', intake_amount %></td>
+        <td><%= link_to 'Edit', edit_intake_amount_path(intake_amount) %></td>
+        <td><%= link_to 'Destroy', intake_amount, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+
+<%= link_to 'New Intake Amount', new_intake_amount_path %> |
+<%= link_to 'Dashboard', root_path %>

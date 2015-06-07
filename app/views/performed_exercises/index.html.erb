@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Performed Exercises</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Performed exercise</th>
+      <th>Burn amount</th>
+      <th>Date</th>
+      <th>Exercise type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @performed_exercises.each do |performed_exercise| %>
+      <tr>
+        <td><%= performed_exercise.performed_exercise %></td>
+        <td><%= performed_exercise.burn_amount %></td>
+        <td><%= performed_exercise.date.strftime("%b %e, %Y - %l:%M%p ") %></td>
+        <td><%= performed_exercise.get_type %></td>
+        <td><%= link_to 'Show', performed_exercise %></td>
+        <td><%= link_to 'Edit', edit_performed_exercise_path(performed_exercise) %></td>
+        <td><%= link_to 'Destroy', performed_exercise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exercise', new_performed_exercise_path %> |
+<%= link_to 'Dashboard', root_path %>
