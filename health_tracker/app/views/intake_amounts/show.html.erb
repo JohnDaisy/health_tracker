@@ -7,7 +7,7 @@
 
 <p>
   <strong>Date:</strong>
-  <%= @intake_amount.date %>
+  <%= @intake_amount.date.strftime("%b %e, %Y - %l:%M%p ") %>
 </p>
 
 <%= link_to 'Edit', edit_intake_amount_path(@intake_amount) %> |
