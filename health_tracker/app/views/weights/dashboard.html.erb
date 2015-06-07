@@ -6,6 +6,7 @@
 <div class="dashboard">
 <% if @current_weight %>
   <p>Your weight today is: <%= @current_weight.weight %> lbs.</p>
+	<p> Your net caloric intake is <%= @daily_net %>.</p>
   <p>If you walked a mile today you could burn
     <%= number_with_precision((@current_weight.weight)*0.57, precision: 0) %> calories.
   </p>
