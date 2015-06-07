@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  performed_exercise: Swimming
+  burn_amount: 300
+  date: 2015-06-05 11:39:10
+  exercise_type_id: 1
+
+two:
+  performed_exercise: Running
+  burn_amount: 150
+  date: <%= DateTime.now.to_s(:db) %>
+  exercise_type_id: 2

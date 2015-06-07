@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weight: 125.0
+  date: 2015-06-03 13:41:00
+
+two:
+  weight: 130.0
+  date: 2015-06-04 13:41:00
+
+three:
+  weight: 139.0
+  date: 2015-06-02 13:41:00

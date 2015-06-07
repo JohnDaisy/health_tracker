@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Performed exercise:</strong>
+  <%= @performed_exercise.performed_exercise %>
+</p>
+
+<p>
+  <strong>Burn amount:</strong>
+  <%= @performed_exercise.burn_amount %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @performed_exercise.date.strftime("%b %e, %Y - %l:%M%p ") %>
+</p>
+
+<p>
+  <strong>Exercise type:</strong>
+  <%= @performed_exercise.get_type %>
+</p>
+
+<%= link_to 'Edit', edit_performed_exercise_path(@performed_exercise) %> |
+<%= link_to 'Back', performed_exercises_path %> |
+<%= link_to 'Dashboard', root_path %>
