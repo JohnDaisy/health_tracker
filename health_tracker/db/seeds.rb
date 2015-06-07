@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-how_many = 50
+how_many = 10
 Time.zone = 'Eastern Time (US & Canada)'
 exercise_array = ["Running", "Weight Lifting", "Push Ups", "Yoga"]
 exercise_hash = Hash.new()
