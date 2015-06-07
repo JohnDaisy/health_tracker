@@ -1,3 +1,9 @@
+
+	<h1 class="text-center">Welcome to your Health Tracker!</h1>
+
+
+
+<div class="dashboard">
 <% if @current_weight %>
   <p>Your weight today is: <%= @current_weight.weight %> lbs.</p>
   <p>If you walked a mile today you could burn
@@ -8,9 +14,12 @@
 <% end %>
 
 <p>So far today you have walked <%= @miles.number_of_miles %> miles today.</p>
+</div>
 
-<%= link_to 'Steps', steps_path %> |
-<%= link_to 'Caloric Intake', intake_amounts_path %> |
-<%= link_to 'Weight', weights_path %> |
-<%= link_to 'Exercises', performed_exercises_path %> |
-<%= link_to 'Dashboard', root_path %>
+<div class="links">
+  <%= link_to 'Steps', steps_path %> |
+  <%= link_to 'Caloric Intake', intake_amounts_path %> |
+  <%= link_to 'Weight', weights_path %> |
+  <%= link_to 'Exercises', performed_exercises_path %> 
+  <!-- <%= link_to 'Dashboard', root_path %> -->
+</div>

@@ -1,3 +1,5 @@
+
+
 <%= form_for(@weight) do |f| %>
   <% if @weight.errors.any? %>
     <div id="error_explanation">
@@ -11,15 +13,19 @@
     </div>
   <% end %>
 
+<div class="container-weight">
   <div class="field">
     <%= f.label :weight %><br>
     <%= f.number_field :weight %>
   </div>
+
   <div class="field">
     <%= f.label :date %><br>
     <%= f.date_select :date %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
 <% end %>

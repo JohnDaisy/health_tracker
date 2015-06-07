@@ -6,6 +6,7 @@ class IntakeAmountsController < ApplicationController
   def index
     @intake_amounts = IntakeAmount.all.order(:date)
     @daily_intake = IntakeAmount.daily_intake
+    @daily_net = IntakeAmount.net_calories
   end
 
   # GET /intake_amounts/1

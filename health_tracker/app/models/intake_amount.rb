@@ -2,7 +2,7 @@ class IntakeAmount < ActiveRecord::Base
 
   def self.daily_intake
     today = self.all.select{|s| s.date.day == DateTime.now.day}
-    today.reduce(0){|sum, s| sum + s.intake_amount}
+    today.reduce(0){|sum, s| sum + s.intake_amount}.to_f
   end
 
   def self.net_calories
