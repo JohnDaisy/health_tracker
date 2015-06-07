@@ -21,7 +21,7 @@
 
   <div class="field">
     <%= f.label :date %><br>
-    <%= f.date_select :date %>
+    <%= f.date_select :date, {ampm: true, minute_step: 10} %>
   </div>
 
   <div class="actions">

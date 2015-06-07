@@ -17,7 +17,7 @@
     <% @weights.each do |weight| %>
       <tr>
         <td><%= weight.weight %></td>
-        <td><%= weight.date %></td>
+        <td><%= weight.date.strftime("%b %e, %Y ") %></td>
         <td><%= link_to 'Show', weight %></td>
         <td><%= link_to 'Edit', edit_weight_path(weight) %></td>
         <td><%= link_to 'Destroy', weight,method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -18,7 +18,7 @@
       <tr>
         <td><%= performed_exercise.performed_exercise %></td>
         <td><%= performed_exercise.burn_amount %></td>
-        <td><%= performed_exercise.date %></td>
+        <td><%= performed_exercise.date.strftime("%b %e, %Y - %l:%M%p ") %></td>
         <td><%= performed_exercise.get_type %></td>
         <td><%= link_to 'Show', performed_exercise %></td>
         <td><%= link_to 'Edit', edit_performed_exercise_path(performed_exercise) %></td>

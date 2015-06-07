@@ -15,7 +15,7 @@
     <% @steps.each do |step| %>
       <tr>
         <td><%= step.step_number %></td>
-        <td><%= step.date %></td>
+        <td><%= step.date.strftime("%b %e, %Y - %l:%M%p ") %></td>
         <td><%= link_to 'Show', step %></td>
         <td><%= link_to 'Edit', edit_step_path(step) %></td>
         <td><%= link_to 'Destroy', step, method: :delete, data: { confirm: 'Are you sure?' } %></td>

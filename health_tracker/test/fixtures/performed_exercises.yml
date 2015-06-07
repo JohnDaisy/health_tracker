@@ -8,6 +8,6 @@ one:
 
 two:
   performed_exercise: Running
-  burn_amount: 100
-  date: 2015-06-05 11:39:10
+  burn_amount: 150
+  date: <%= DateTime.now.to_s(:db) %>
   exercise_type_id: 2

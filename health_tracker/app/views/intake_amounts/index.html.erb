@@ -17,7 +17,7 @@
     <% @intake_amounts.each do |intake_amount| %>
       <tr>
         <td><%= intake_amount.intake_amount %></td>
-        <td><%= intake_amount.date %></td>
+        <td><%= intake_amount.date.strftime("%b %e, %Y - %l:%M%p ") %></td>
         <td><%= link_to 'Show', intake_amount %></td>
         <td><%= link_to 'Edit', edit_intake_amount_path(intake_amount) %></td>
         <td><%= link_to 'Destroy', intake_amount, method: :delete, data: { confirm: 'Are you sure?' } %></td>
